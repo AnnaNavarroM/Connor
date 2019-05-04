@@ -6,7 +6,7 @@ module.exports = {
     config: {
         name: "cat",
         description: "sends a picture of a cat!",
-        usage: "!cat",
+        usage: "?cat",
         category: "miscellaneous",
         accessableby: "Members",
         aliases: ["catto"]
@@ -19,11 +19,11 @@ module.exports = {
         if(!body) return message.reply("Whoops! There seems to  be a problem. Please, try again!")
 
         let cEmbed = new RichEmbed()
-        .setColor(pink)
+        .setColor(aqua)
         .setAuthor(`I like cats!`, message.guild.iconURL)
         .setImage(body.file)
         .setTimestamp()
-        .setFooter("Chloe, your Android hostess.")
+        .setFooter("Connor, the Android sent by Cyberlife.")
 
             message.channel.send(cEmbed)
             msg.delete();
