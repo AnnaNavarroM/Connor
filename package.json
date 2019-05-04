@@ -1,0 +1,27 @@
+{
+  "name": "chloe",
+  "version": "1.0.0",
+  "description": "manager bot for my dbh discord server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": { "node": "12.0.0" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaNavarroM/Chloe"
+  },
+  "author": "anna navarro",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "fetch": "^1.1.0",
+    "file-system": "^2.2.2",
+    "fs-filesystem": "^2.1.2",
+    "json-fetch": "^8.0.0",
+    "node-fetch": "^2.4.1",
+    "regex": "^0.1.1",
+    "rich-embed": "^1.1.3"
+  }
+}
