@@ -1,5 +1,5 @@
 const { RichEmbed } = require("discord.js")
-const { pink } = require("../../colours.json");
+const { aqua } = require("../../colours.json");
 const fetch = require('node-fetch');
 
 module.exports = { 
