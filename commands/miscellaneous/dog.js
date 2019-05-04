@@ -7,7 +7,7 @@ module.exports = {
     config: {
         name: "dog",
         description: "Sends a picture of a dog!",
-        usage: "!dog",
+        usage: "?dog",
         category: "miscellaneous",
         accessableby: "Members",
         aliases: ["doggo", "puppy"]
@@ -17,7 +17,7 @@ module.exports = {
 
     fetch(`https://dog.ceo/api/breeds/image/random`)
     .then(res => res.json()).then(body => {
-        if(!body) return message.reply("Whoops! There seems to  be a problem. Please, try again!")
+        if(!body) return message.reply("There seems to  be a problem. Please, try again!")
 
         let dEmbed = new RichEmbed()
         .setColor(aqua)
