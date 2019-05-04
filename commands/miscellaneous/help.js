@@ -1,12 +1,12 @@
 const { RichEmbed } = require("discord.js")
 const { prefix } = require("../../botconfig.json");
-const { pink } = require("../../colours.json");
+const { aqua } = require("../../colours.json");
 
 module.exports = {
     config: {
         name: "help",
         aliases: ["h", "halp", "commands"],
-        usage: "!usage",
+        usage: "?help",
         category: "miscellaneous",
         description: "",
         accessableby: "Members"
@@ -26,17 +26,17 @@ module.exports = {
             }
         }
 
-        embed.setColor(pink)
+        embed.setColor(aqua)
         .setAuthor(`${message.guild.me.displayName} help`, message.guild.iconURL)
         .setThumbnail(bot.user.displayAvatarURL)
         .setTimestamp()
         .setDescription(`These are my available commands!\nMy prefix is: **${prefix}**`)
-        .setFooter("Chloe, your Android hostess.", bot.user.displayAvatarURL)
+        .setFooter("Connor, the Android sent by Cyberlife.", bot.user.displayAvatarURL)
         message.channel.send(embed)
     } else {
         let command = bot.commands.get(args[0].toLowerCase()) ?  bot.commands.get(args[0].toLowerCase()).config : bot.commands.get(bot.aliases.get(args[0].toLowerCase())).config;
             
-        embed.setColor(pink)
+        embed.setColor(aqua)
         .setAuthor(`${message.guild.me.displayName} Help`, message.guild.iconURL)
         .setThumbnail(bot.user.displayAvatarURL)
         .setDescription(`My prefix is: ${prefix}\n\n**Command:** ${command.name}\n**Description:** ${command.description || "No Description"}\n**Usage:** ${command.usage || "No Usage"}\n**Accessable by:** ${command.accessableby || "Members"}\n**Aliases:** ${command.aliases ? command.aliases.join(", ") : "None"}`)
