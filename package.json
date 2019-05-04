@@ -20,8 +20,10 @@
     "file-system": "^2.2.2",
     "fs-filesystem": "^2.1.2",
     "json-fetch": "^8.0.0",
-    "node-fetch": "^2.4.1",
+    "node-fetch": "^2.5.0",
     "regex": "^0.1.1",
-    "rich-embed": "^1.1.3"
+    "rich-embed": "^1.1.3",
+    "express": "^4.16.4",
+    "express-glitch-keepalive": "^0.2.0"
   }
 }
