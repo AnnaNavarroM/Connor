@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "uptime",
         description: "Displays the bots current uptime!",
-        usage: "!uptime",
+        usage: "?uptime",
         category: "miscellaneous",
         accessableby: "Members",
         aliases: ["ut"]
