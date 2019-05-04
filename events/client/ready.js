@@ -1,14 +1,14 @@
 module.exports = async bot => {
-     console.log(`${bot.user.username} is online`)
+     console.log(`My name is Connor`)
 
     let statuses = [
-        "over the server.",
-        "over my users.",
+        "over the people of Detroit",
+        "over the DPD",
         "you play Detroit",
-        "Connor doing coin tricks.",
+        "a briefing about the case",
         "Markus giving a speech",
-        "Kara brushing Alice's hair",
-        "Elijah playing the piano",
+        "Chloe singing",
+        "Hank playing with Sumo",
         "news about the revolution",
     ]
 
