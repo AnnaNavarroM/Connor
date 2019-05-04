@@ -1,5 +1,5 @@
 const { RichEmbed } = require("discord.js")
-const { pink } = require("../../colours.json");
+const { aqua } = require("../../colours.json");
 const fetch = require('node-fetch');
 
 
@@ -20,11 +20,11 @@ module.exports = {
         if(!body) return message.reply("Whoops! There seems to  be a problem. Please, try again!")
 
         let dEmbed = new RichEmbed()
-        .setColor(pink)
+        .setColor(aqua)
         .setAuthor(`I like dogs!`, message.guild.iconURL)
         .setImage(body.message)
         .setTimestamp()
-        .setFooter("Chloe, your Android hostess.")
+        .setFooter("Connor, the Android sent by Cyberlife.")
 
             message.channel.send(dEmbed)
             msg.delete();
